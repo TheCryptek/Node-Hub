@@ -9,7 +9,7 @@ def clear():
     # Don't forget this is how to clear the terminal    
     # cryp.clear()
 
-def delete()
+def delete():
     os.system('del cryp.pyc' if os.name == 'nt' else 'rm cryp.pyc)
     # Delete the generated cryp.pyc
 
