@@ -10,7 +10,7 @@ def clear():
     # cryp.clear()
 
 def delete():
-    os.system('del cryp.pyc' if os.name == 'nt' else 'rm cryp.pyc)
+    os.system('del cryp.pyc' if os.name == 'nt' else 'rm cryp.pyc')
     # Delete the generated cryp.pyc
 
 def space():
