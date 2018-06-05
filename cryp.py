@@ -2,6 +2,8 @@
 #   This module is created for snippets
 #   I use frequently in Python.
 
+import os
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 # Don't forget this is how to clear the terminal    
