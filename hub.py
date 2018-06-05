@@ -15,6 +15,7 @@ import sys
 import zipfile
 import traceback
 import cryp
+import platform
 
 # Colors
 header = cryp.bcolors.HEADER
@@ -46,6 +47,13 @@ print header + """
                     
           Created by Brandon (TheCryptek) Conley
 """ + endc
+
+# Print system info
+print header + 'System: ' + endc + platform.system()
+print header + 'Release: ' + endc + platform.release()
+
+#add a space
+cryp.space()
                    
 raw_input("Press enter to continue...")
 
