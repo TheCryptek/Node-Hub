@@ -16,6 +16,7 @@ import zipfile
 import traceback
 import cryp
 import platform
+import socket
 
 # Colors
 header = cryp.bcolors.HEADER
@@ -78,7 +79,17 @@ cryp.clear()
 
 # What we do with their answer
 if (answer == 'Y'):
-    print "You said yes"
+    class Server():
+        def __init__(self,Address=('IP of Server',25565),MaxClient=1):
+            self.s = socket.socket()
+            self.s.bind(Address)
+            self.s.listen(MaxClient)
+        def WaitForConnection(self):
+            self.Client, self.Adr=(self.s.accept())
+            print('Got a connection from: '+str(self.Client)+'.')
+            
+    s = Server()
+    s.WaitForConnection()
 else:
     print "You said no"
 
