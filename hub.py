@@ -79,17 +79,20 @@ cryp.clear()
 
 # What we do with their answer
 if (answer == 'Y'):
-    class Server():
-        def __init__(self,Address=('IP of Server',25565),MaxClient=1):
-            self.s = socket.socket()
-            self.s.bind(Address)
-            self.s.listen(MaxClient)
-        def WaitForConnection(self):
-            self.Client, self.Adr=(self.s.accept())
-            print('Got a connection from: '+str(self.Client)+'.')
+    #while(True):
+        class Server():
+            def __init__(self,Address=('IP Address of Server',25565),MaxClient=2):
+                
+                self.s = socket.socket()
+                self.s.bind(Address)
+                self.s.listen(MaxClient)
+            def WaitForConnection(self):
+                
+                self.Client, self.Adr=(self.s.accept())
+                print('Got a connection from: '+str(self.Client)+'.')
             
-    s = Server()
-    s.WaitForConnection()
+        s = Server()
+        s.WaitForConnection()
 else:
     print "You said no"
 
