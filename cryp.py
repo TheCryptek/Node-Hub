@@ -2,20 +2,14 @@
 #   This module is created for snippets
 #   I use frequently in Python.
 
-import os
-
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
-
 # Don't forget this is how to clear the terminal    
-
 # cryp.clear()
 
 def space():
     print " "
-
 # Don't forget this is how to space
-
 # cryp.space()
 
 class bcolors:
@@ -27,9 +21,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    
 # This is to help with colors in actual script
-
 # header = cryp.bcolors.HEADER
 # blue = cryp.bcolors.OKBLUE
 # green = cryp.bcolors.OKGREEN
