@@ -15,7 +15,6 @@ import sys
 import zipfile
 import traceback
 import cryp
-import psutil
 
 # Colors
 header = cryp.bcolors.HEADER
