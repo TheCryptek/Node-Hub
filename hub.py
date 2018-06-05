@@ -57,9 +57,28 @@ cryp.space()
                    
 raw_input("Press enter to continue...")
 
-# clear the screen once more
+# clear the screen
 cryp.clear()
 
+# Node Network Hub Message
+print warning + """
+You are about to start Node Network Hub, this will make your machine the Hub
+of a node network. Other nodes who have the IP of this hub will be able to
+connect as long as you have your ports forwarded correctly! If you want
+this machine to connect to an already existing Node Hub, then please use
+Node Network Client.
+""" + endc
 
+# make sure they understand
+print "Do you understand? Y/N"
+answer = raw_input("> ")
 
+# clear the screen
+cryp.clear()
+
+# What we do with their answer
+if (answer == 'Y'):
+    print "You said yes"
+else:
+    print "You said no"
 
