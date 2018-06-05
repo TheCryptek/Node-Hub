@@ -6,13 +6,17 @@ import os
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
-# Don't forget this is how to clear the terminal    
-# cryp.clear()
+    # Don't forget this is how to clear the terminal    
+    # cryp.clear()
+
+def delete()
+    os.system('del cryp.pyc' if os.name == 'nt' else 'rm cryp.pyc)
+    # Delete the generated cryp.pyc
 
 def space():
     print " "
-# Don't forget this is how to space
-# cryp.space()
+    # Don't forget this is how to space
+    # cryp.space()
 
 class bcolors:
     HEADER = '\033[95m'
@@ -23,12 +27,12 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-# This is to help with colors in actual script
-# header = cryp.bcolors.HEADER
-# blue = cryp.bcolors.OKBLUE
-# green = cryp.bcolors.OKGREEN
-# warning = cryp.bcolors.WARNING
-# fail = cryp.bcolors.FAIL
-# endc = cryp.bcolors.ENDC
-# bold = cryp.bcolors.BOLD
-# underline = cryp.bcolors.UNDERLINE
+    # This is to help with colors in actual script
+    # header = cryp.bcolors.HEADER
+    # blue = cryp.bcolors.OKBLUE
+    # green = cryp.bcolors.OKGREEN
+    # warning = cryp.bcolors.WARNING
+    # fail = cryp.bcolors.FAIL
+    # endc = cryp.bcolors.ENDC
+    # bold = cryp.bcolors.BOLD
+    # underline = cryp.bcolors.UNDERLINE
