@@ -22,6 +22,3 @@ their will be applications for this project that I am either not using
 or someone will edit the code and either improve it or adapt it to their
 situation.
 
-# Extra Information
-
-This repository is mirrored to [GitHub](https://github.com/TheCryptek/Node-Hub
