@@ -24,4 +24,4 @@ situation.
 
 # Extra Information
 
-This repository is mirrored to [GitHub] (https://github.com/TheCryptek/Node-Hub
+This repository is mirrored to [GitHub](https://github.com/TheCryptek/Node-Hub
